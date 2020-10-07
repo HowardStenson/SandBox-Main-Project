@@ -1,14 +1,14 @@
 // Global Variables
 PImage pic ;
 float imageStartWidth, imageStartHeight, imageWidth, imageHeight ;
-int imageWidthRatio ; 
+float imageWidthRatio ; 
 float imageHeightRatio ;
 
 void setup() {
- size(500, 404); //fullScreen(), displayWidth & displayHeight
+ size(500, 502); //fullScreen(), displayWidth & displayHeight
    pic = loadImage("Cat.jpg"); //Dimensions width 250, height 202
-  imageWidthRatio = 250/250 ; 
-  imageHeightRatio = 202/250;
+  imageWidthRatio = 250.0/250.0 ; 
+  imageHeightRatio = 202.0/250.0;
   imageStartWidth = width*0 ;
   imageStartHeight = height*0 ;
   imageWidth = width*imageWidthRatio; // Aspect Ratio ;
